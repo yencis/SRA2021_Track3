@@ -43,3 +43,9 @@ print(np.mean(estimates_1e3), np.std(estimates_1e3))
 print(np.mean(estimates_1e5)/(2*np.sqrt(1e5)))
 print(np.mean(estimates_1e4)/(2*np.sqrt(1e4)))
 print(np.mean(estimates_1e3)/(2*np.sqrt(1e3)))
+
+
+import matplotlib.pyplot as plt
+plt.figure()
+plt.hist(estimates_1e5, bins=10)
+plt.show()
